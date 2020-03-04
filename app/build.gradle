@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.mabnets.afyabora"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.github.lguipeng:BubbleView:1.0.1'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    implementation 'com.github.hajiyevelnur92:intentanimation:1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation files('libs/gson-2.2.4-6.0.0.jar')
+    implementation files('libs/KGJsonConverter.jar')
+    implementation files('libs/PhotoUtil.jar')
+}

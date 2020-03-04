@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#23283a"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register and easily manage your poultry with a click of a button "
+            android:textColor="#fff"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="register"
+            android:textAllCaps="true"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="text"
+            android:id="@+id/uname"
+            />
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="Id number"
+            android:id="@+id/uidno"
+            android:inputType="phone"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="phone"
+            android:id="@+id/uphone"
+            android:inputType="phone"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:text="sign up"
+            android:background="#3498db"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:id="@+id/usignup"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="already have an account? click here toLogin"
+            android:textSize="15sp"
+            android:id="@+id/uloginref"
+            android:layout_marginTop="10dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

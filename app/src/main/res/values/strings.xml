@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PoultryCare</string>
+    <string-array name="indexmenuone">
+        <item>Tips</item>
+        <item>Search condition</item>
+        <item>Consult an Expert</item>
+    </string-array>
+    <string-array name="indexmenutwo">
+        <item>Get expert advice on how to improve your poultryfarming generally</item>
+        <item>Find help on conditions and diseases that may affect your poultry animals</item>
+        <item>Converse with a vetinary expert </item>
+    </string-array>
+</resources>
